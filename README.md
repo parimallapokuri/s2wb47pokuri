@@ -3,4 +3,4 @@ Hi, I'm Parimalla Pokuri
 
 Link to remote repo: https://s2wb47pokuri.herokuapp.com/
 
-Class="market"; attributes/types used in market: itemType(String),Quantity(number),price(number).
+Class="market"; attributes/types used in market: itemType(String),Quantity(number),price(string).
