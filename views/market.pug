@@ -8,24 +8,24 @@ block content
                 let market = [
                     {
                         "itemType": "Vegetables",
-                        "Quantity": 15,
-                        "price": "$20"
+                        "Quantity": 20,
+                        "price": "10 USD"
                     },
                     {
                         "itemType": "Drinks",
                         "Quantity": 40,
-                        "price": "$10"
+                        "price": "5 USD"
                     },
                     {
                         "itemType": "Meat",
                         "Quantity": 30,
-                        "price": "$40"
-                    }              
+                        "price": "30 USD"
+                    },                   
                 ]
-            each v,index in market
-                div(class="col-sm-2" onclick=`buy(${index})`) #{v.itemType}
-                div(class="col-sm-2" onclick=`buy(${index})`) #{v.Quantity}
-                div(class="col-sm-2" onclick=`buy(${index})`) #{v.price}
+            each p,index in market
+                div(class="col-sm-2" onclick=`buy(${index})`) #{p.itemType}
+                div(class="col-sm-2" onclick=`buy(${index})`) #{p.Quantity}
+                div(class="col-sm-2" onclick=`buy(${index})`) #{p.price}
   script.                
         function buy(intemNo)
         {
