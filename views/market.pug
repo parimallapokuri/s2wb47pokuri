@@ -9,18 +9,18 @@ block content
                     {
                         "itemType": "Vegetables",
                         "Quantity": 15,
-                        "price": "20$"
+                        "price": "$20"
                     },
                     {
                         "itemType": "Drinks",
                         "Quantity": 40,
-                        "price": "10$"
+                        "price": "$10"
                     },
                     {
                         "itemType": "Meat",
                         "Quantity": 30,
-                        "price": "40$"
-                    },                   
+                        "price": "$40"
+                    }              
                 ]
             each v,index in market
                 div(class="col-sm-2" onclick=`buy(${index})`) #{v.itemType}
